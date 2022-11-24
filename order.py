@@ -9,7 +9,6 @@ class Order(object):
         self.orderItems = orderItems    # List of orders
 
     def checkMenu(self)->str:
-        
         # If orderedItems is empty 
         if self.orderItems == []:
             return "Unable to process: Main is missing, side is missing"
@@ -42,7 +41,6 @@ class Order(object):
         if menuItem.count(3)>1:
             countGreater = menuItem.count(3)
         menuItem = list(set(menuItem))
-        print("Menu: ",menuItem)
         for i in menuItem:
             if i>3:
                 return "Invalid menu item"
@@ -64,7 +62,6 @@ class Order(object):
         if menuItem.count(2)>1:
             countGreater = menuItem.count(2)
         menuItem = list(set(menuItem))
-        print("Menu: ",menuItem)
         for i in menuItem:
             if i>3:
                 return "Invalid menu item"
@@ -84,7 +81,6 @@ class Order(object):
         if menuItem.count(3)>1:
             countGreater = menuItem.count(3)
         menuItem = list(set(menuItem))
-        print("Menu: ",menuItem)
         if 4 not in menuItem:
             return "Unable to process: Dessert is missing"
         for i in menuItem:
@@ -92,5 +88,4 @@ class Order(object):
                 return "Invalid menu item"
             outputString.append(OrderMenu['Order'][str(self.mealType)][str(i)]) 
         outputString.append('Water')
-
         return ', '.join(outputString)

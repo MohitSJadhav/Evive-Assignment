@@ -3,7 +3,6 @@ import order as ord
 def processInput(inpString)->list:
     
     inpString = inpString.split(" ")
-    print("np: ",inpString)
     if inpString==['']:
         return []
     orderType = inpString[0]
@@ -16,13 +15,11 @@ def processInput(inpString)->list:
     order = list()
     order.append(orderType)
     order.append(orderMenu)
-    # print(order)
     return order
+
 def orderSystem(inpOrder)->str:
     # processing the input to appropriate form
-    # inpOrder = input()
     order = processInput(inpOrder)
-    print("order####: ",order)
     if order != []:
         newOrder = ord.Order(order[0],order[1])
         outputString = newOrder.checkMenu()
