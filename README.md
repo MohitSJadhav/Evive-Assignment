@@ -15,6 +15,7 @@ To execute the python code follow steps below:
 1. Command to run main file- python main.py
 2. Command to run sample test file - python testMain.py
 3. Command to test the class file - python testOrder.py
+4. No Library dependencies are required other than unittest and json
 
 Miscellaneous information:
 1. Tests are written using unittest utility. All functions unit tests are covered including the negative positive test case.
