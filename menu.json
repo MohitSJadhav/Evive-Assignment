@@ -1,0 +1,20 @@
+{
+    "Order":{
+        "Breakfast":{
+            "1": "Eggs",
+            "2": "Toast",
+            "3": "Coffee"
+        },
+        "Lunch":{
+            "1": "Sandwich",
+            "2": "Chips",
+            "3": "Soda"
+        },
+        "Dinner":{
+            "1": "Steak",
+            "2": "Potatoes",
+            "3": "Wine",
+            "4": "Cake"
+        }
+    }
+}
